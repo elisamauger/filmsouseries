@@ -1,5 +1,6 @@
 class SeriesController < ApplicationController
   before_action :set_series, only: [:show, :edit, :update, :destroy, :set_checked]
+  before_action :authorize
   # GET /series
   # GET /series.json
   def index
