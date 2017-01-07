@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: films
+#
+#  id          :integer          not null, primary key
+#  nom         :string
+#  realisateur :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  realisateur: MyString
+
+two:
+  nom: MyString
+  realisateur: MyString

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @documentaire.nom %>
+</p>
+
+<p>
+  <strong>Realisateur:</strong>
+  <%= @documentaire.realisateur %>
+</p>
+
+<%= link_to 'Edit', edit_documentaire_path(@documentaire) %> |
+<%= link_to 'Back', documentaires_path %>

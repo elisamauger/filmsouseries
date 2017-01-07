@@ -1,0 +1,27 @@
+<%= form_for(documentaire) do |f| %>
+  <% if documentaire.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(documentaire.errors.count, "error") %> prohibited this documentaire from being saved:</h2>
+
+      <ul>
+      <% documentaire.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nom %>
+    <%= f.text_field :nom %>
+  </div>
+
+  <div class="field">
+    <%= f.label :realisateur %>
+    <%= f.text_field :realisateur %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

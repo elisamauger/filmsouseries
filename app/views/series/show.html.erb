@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @series.nom %>
+</p>
+
+<p>
+  <strong>Realisateur:</strong>
+  <%= @series.realisateur %>
+</p>
+
+<%= link_to 'Edit', edit_series_path(@series) %> |
+<%= link_to 'Back', series_index_path %>

@@ -1,0 +1,8 @@
+<h1>Signup!</h1>
+<%= form_for :user, url: '/users' do |f| %>
+	Nom: <%= f.text_field :name %>
+	Email: <%= f.text_field :email %>
+	Mot de passe: <%= f.password_field :password %>
+	Confirmation mot de passe: <%= f.password_field :password_confirmation%>
+	<%= f.submit "Submit" %>
+<% end %>

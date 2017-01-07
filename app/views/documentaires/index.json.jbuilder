@@ -1,0 +1,1 @@
+json.array! @documentaires, partial: 'documentaires/documentaire', as: :documentaire

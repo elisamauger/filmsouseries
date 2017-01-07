@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Documentaires</h1>
+
+<table id="documentaires-index">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Realisateur</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @documentaires.each do |documentaire| %>
+      <tr>
+        <td><%= documentaire.nom %></td>
+        <td><%= documentaire.realisateur %></td>
+        <td><%= link_to 'Show', documentaire %></td>
+        <td><%= link_to 'Edit', edit_documentaire_path(documentaire) %></td>
+        <td><%= link_to 'Destroy', documentaire, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
