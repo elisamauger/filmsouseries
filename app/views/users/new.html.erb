@@ -1,8 +1,15 @@
-<h1>Signup!</h1>
-<%= form_for :user, url: '/users' do |f| %>
-	Nom: <%= f.text_field :name %>
-	Email: <%= f.text_field :email %>
-	Mot de passe: <%= f.password_field :password %>
-	Confirmation mot de passe: <%= f.password_field :password_confirmation%>
-	<%= f.submit "Submit" %>
+<div class="container">
+	<h1>S'inscrire</h1>
+	<%= form_for :user, url: '/users' do |f| %>
+	<%= label_tag(:name, "Nom :") %>
+	<%= f.text_field :name %>
+	<%= label_tag(:email, "Adresse mail :") %>
+	<%= f.text_field :email %>
+	<%= label_tag(:password, "Mot de passe :") %>
+	<%= f.password_field :password %>
+	<%= label_tag(:password_confirmation, "Confirmation :") %>
+	<%= f.password_field :password_confirmation%>
+	<%= f.submit "S'inscrire" %>
+	<a href="/">Accueil</a>
+</div>
 <% end %>

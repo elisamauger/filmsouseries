@@ -1,3 +1,8 @@
+
+
+<div class="home">
+<h1>Bienvenue sur Films ou Séries</h1>
+<p>Ici faites une liste des films, séries et documentaires que vous souhaitez regarder plus tard pour ne pas les oublier !<p>
 <h2>Films</h2>
 <ul id="films-index">
 	<% @films.each do |film| %>
@@ -6,7 +11,7 @@
 			<%= check_box_tag "checked_film_#{film.id}", nil, film.checked, :'data-id' => film.id %>		
 		</li>
 	<% end %>
-	<%= link_to 'New Film', new_film_path %>
+	<%= link_to 'Ajouter', new_film_path %>
 </ul>
 
 <h2>Séries</h2>
@@ -17,7 +22,7 @@
 			<%= check_box_tag "checked_series_#{series.id}", nil, series.checked, :'data-id' => series.id %>		
 		</li>
 	<% end %>
-	<%= link_to 'New Series', new_series_path %>
+	<%= link_to 'Ajouter', new_series_path %>
 </ul>
 
 <h2>Documentaires</h2>
@@ -28,5 +33,7 @@
 			<%= check_box_tag "checked_documentaire_#{documentaire.id}", nil, documentaire.checked, :'data-id' => documentaire.id %>		
 		</li>
 	<% end %>
-	<%= link_to 'New Documentaire', new_documentaire_path %>
+	<%= link_to 'Ajouter', new_documentaire_path %>
 </ul>
+</div>
+

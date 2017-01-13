@@ -1,0 +1,130 @@
+* {
+box-sizing: border-box;
+background-color: #E7ECEE;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+margin: 0 auto;
+}
+
+
+.home {
+
+border-style: dotted;
+border-color: #3B5561;
+background-color: #E7ECEE;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+flex-direction: column;
+margin: 5px;
+padding: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+h1 {
+color: #3B5561;
+font-family: 'Abel';
+font-size: 40px;
+}
+
+h2 {
+color: #3B5561;
+font-family: 'Abel';
+font-size: 25px;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+p {
+color: #3B5561;
+font-family: 'Lato';
+}
+
+ul {
+color: #9BDFFF;
+font-family: 'Lato';
+padding: 0;
+}
+
+#films-index a{
+	text-decoration: none;
+	color: #8FCEEB;
+	display: flex;
+	justify-content: center;
+}
+
+#documentaires-index a {
+	text-decoration: none;
+	color: #8FCEEB;
+	display: flex;
+	justify-content: center;
+}
+
+#series-index a {
+	text-decoration: none;
+	color: #8FCEEB;
+	display: flex;
+	justify-content: center;
+}
+
+a {
+	font-family: 'Lato';
+	color: #8FCEEB;
+	text-align: center;
+	justify-content: center;
+}
+
+
+.container {
+	width: 30%;
+	background-color: #FFF;
+	margin: 0 auto;
+	padding: 1em 3em;
+	text-align: center;
+}
+.container a {
+	background-color: transparent;
+	text-decoration: none !important;
+}
+.container h1,
+.container form,
+.container label {
+	background-color: transparent;
+}
+.container label {
+	font-family: "Lato", sans-serif;
+}
+.container h1,
+.container form input {
+	display: block;
+	margin: 1em auto;
+}
+.container form input[type="text"],
+.container form input[type="password"] {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #3B5561;
+}	
+.container form input[type="text"]:focus,
+.container form input[type="password"]:focus {
+ border-bottom: 1px solid #8FCEEB;
+}
+.container form input[type="submit"] {
+	width: 50%;
+	padding: .7em 2em;
+	background-color: transparent;
+	border: 1px solid #3B5561;
+	color: #3B5561;
+	text-align: center;
+}
+.container form input[type="submit"]:hover {
+	background-color: #8FCEEB;
+	border-color: #8FCEEB;
+	color: #000;
+}
